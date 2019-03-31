@@ -1,0 +1,20 @@
+<h3>Schedules</h3>
+
+<table border="1" cellspacing="0">
+    <tr>
+        <th>Habit</th>
+        <th class="count">Streak</th>
+    </tr>
+    {{#each this.scheds as |sched|}}
+        <tr>
+            <td>{{sched.name}}</td>
+            <td class="count">{{sched.count}}</td>
+        </tr>
+    {{/each}}
+</table>
+
+<h3>{{this.title}}</h3>
+
+{{input value=count placeholder="input count"}}
+{{input value=text enter=(action "update") placeholder="input schedule"}}
+<h5>just hit enter to add</h5>

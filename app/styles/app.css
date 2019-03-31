@@ -1,0 +1,14 @@
+*{
+    text-align: center;
+}
+table{
+    margin: 0 auto;
+    width: 300px;
+}
+td, th{
+    padding: 5px;
+    text-align: left;
+}
+.count{
+    text-align: center;
+}
